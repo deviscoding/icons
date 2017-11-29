@@ -1,0 +1,19 @@
+@import "icons-functions";
+
+$enable-framework: false !default;
+
+// region //////////////////////////////////////////////// Icon Variables
+
+$icon-css-prefix:       get-icon-prefix();      // default is 'ico'
+$icon-font-name:        get-icon-font-name();   // default is 'carrot'
+$icon-font-size:        get-icon-font-size();   // default is 16px;
+$icon-line-height:      get-icon-line-height(); // default is 1;
+$icon-width:            $icon-font-size         !default;
+$icon-height:           $icon-font-size         !default;
+
+// endregion ///////////////////////////////////////////// End Icon Variables
+
+@if not($enable-framework) {
+  @include set-component-feature("icons", "font", true);
+  @include set-component-feature("icons", "svg", true);
+}

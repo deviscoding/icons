@@ -1,0 +1,68 @@
+@import "icons-variables";
+@import "icons-mixins";
+
+@if $enable-framework == false {
+  @if $icon-font-name == "carrot" {
+/*!
+ * StrapLess Icons v1.0 (http://github.com/strapless/icons)
+ * Embedded Font from Open Iconic (https://github.com/iconic/open-iconic)
+ * Licensed under MIT (https://github.com/strapless/icons/blob/master/LICENSE)
+ */
+  } @else {
+/*!
+ * StrapLess Icons v1.0 (http://github.com/strapless/icons)
+ * Licensed under MIT (https://github.com/strapless/icons/blob/master/LICENSE)
+ */
+  }
+}
+
+@if $icon-font-name == "carrot" {
+  @font-face {
+    font-family: 'carrot';
+    $mime:   unquote($icon-font-mime);
+    $format: unquote($icon-font-format);
+    $font:   unquote($icon-font);
+    src: url("data:#{$mime};charset=utf-8;base64,#{$font}") format(#{$format});
+    font-weight: normal;
+    font-style: normal;
+  }
+}
+
+// If we're using font icons, but not using FontAwesome, generate the icon classes
+@if icon-feature("font") {
+  @if not(use-font-awesome()) {
+
+    // Icon Font CSS Classes
+    .#{$icon-css-prefix} {
+      @include icon-font();
+    }
+    .#{$icon-css-prefix}-2x { font-size: 2em; }
+    .#{$icon-css-prefix}-3x { font-size: 3em; }
+    .#{$icon-css-prefix}-4x { font-size: 4em; }
+    .#{$icon-css-prefix}-5x { font-size: 5em; }
+
+    @each $icon,$content in $icon-characters {
+      .#{$icon-css-prefix}-#{$icon}::before {
+        content: icon-content($icon);
+      }
+    }
+  }
+}
+
+@if icon-feature("svg") {
+  svg.#{$icon-css-prefix} {
+    width: $icon-width;
+    height: $icon-height;
+    max-height: 100%;
+    fill: currentColor;
+    @if icon-feature("font") {
+      &::before {
+        content: '' !important;
+      }
+    }
+    &.#{$icon-css-prefix}-2x { width: 2 * $icon-width; height: 2 * $icon-height; }
+    &.#{$icon-css-prefix}-3x { width: 3 * $icon-width; height: 3 * $icon-height; }
+    &.#{$icon-css-prefix}-4x { width: 4 * $icon-width; height: 4 * $icon-height; }
+    &.#{$icon-css-prefix}-5x { width: 5 * $icon-width; height: 5 * $icon-height; }
+  }
+}
