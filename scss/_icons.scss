@@ -16,13 +16,13 @@
   }
 }
 
-@if $icon-font-name == "carrot" {
+@if quote($icon-font-name) == "carrot" {
   @font-face {
-    font-family: 'carrot';
+    font-family: carrot;
     $mime:   unquote($icon-font-mime);
     $format: unquote($icon-font-format);
     $font:   unquote($icon-font);
-    src: url("data:#{$mime};charset=utf-8;base64,#{$font}") format(#{$format});
+    src: url("data:#{$mime};charset=utf-8;base64,#{$font}") format("#{$format}");
     font-weight: normal;
     font-style: normal;
   }
