@@ -9,8 +9,8 @@
 
 @function icon-content( $icon ) {
   $i: quote( $icon );
-  @if map-has-key( $icon-characters, $icon ) {
-    @return unicode( map-get( $icon-characters, $icon ) );
+  @if map-has-key( $icons-character, $icon ) {
+    @return unicode( map-get( $icons-character, $icon ) );
   }
 
   @error 'The icon character map does not contain the icon: `#{$icon}`.';
