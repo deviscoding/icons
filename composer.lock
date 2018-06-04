@@ -4,21 +4,24 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "content-hash": "ed16bb5a66255662a0160e51e89e64b0",
+    "content-hash": "61a6bc2afd08c46b8bb52b4627856020",
     "packages": [
         {
-            "name": "strapless/base",
-            "version": "1.1.5",
+            "name": "deviscoding/base",
+            "version": "1.1.14",
             "source": {
                 "type": "git",
-                "url": "https://github.com/strapless/base.git",
-                "reference": "4f3b464eb4d196a71646dd29501d565b28cc60bd"
+                "url": "https://github.com/deviscoding/base.git",
+                "reference": "49fa118ac7a4188f8da232910d449d5d8ba5cfa0"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/strapless/base/zipball/4f3b464eb4d196a71646dd29501d565b28cc60bd",
-                "reference": "4f3b464eb4d196a71646dd29501d565b28cc60bd",
+                "url": "https://api.github.com/repos/deviscoding/base/zipball/49fa118ac7a4188f8da232910d449d5d8ba5cfa0",
+                "reference": "49fa118ac7a4188f8da232910d449d5d8ba5cfa0",
                 "shasum": ""
+            },
+            "replace": {
+                "strapless/base": "^1.1"
             },
             "type": "library",
             "notification-url": "https://packagist.org/downloads/",
@@ -32,7 +35,7 @@
                 }
             ],
             "description": "SASS Functions & mixins for managing variables within various SASS components.",
-            "homepage": "https://www.github.com/strapless/base",
+            "homepage": "https://www.github.com/deviscoding/base",
             "keywords": [
                 "css",
                 "maps",
@@ -41,7 +44,7 @@
                 "strapless",
                 "variables"
             ],
-            "time": "2017-12-05T01:04:44+00:00"
+            "time": "2018-05-24T12:29:40+00:00"
         }
     ],
     "packages-dev": [],

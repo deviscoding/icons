@@ -1,25 +1,29 @@
 {
     "name": "strapless/icons",
-    "description": "CSS Classes, Mixins and Functions to manage icons for the StrapLess CSS Framework.  Also usable for other CSS projects.",
+    "description": "CSS Classes, Mixins and Functions to manage icons in CSS and SCSS projects.",
     "keywords": [
         "sass",
         "scss",
         "strapless",
+        "deviscoding",
         "css",
         "icons",
         "svg",
         "font"
     ],
-    "homepage": "https://www.github.com/strapless/icons",
-    "version": "1.0.1",
+    "homepage": "https://www.github.com/deviscoding/icons",
+    "version": "1.0.2",
     "authors": [
         {
             "name": "Aaron M Jones",
             "homepage": "http://www.jonesiscoding.com"
         }
     ],
+    "replace": {
+        "strapless/icons": "^1.0"
+    },
     "license": "MIT",
     "require": {
-        "strapless/base": "^1.1.5"
+        "deviscoding/base": "^1.1.5"
     }
 }
