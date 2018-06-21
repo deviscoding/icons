@@ -12,7 +12,7 @@
         "font"
     ],
     "homepage": "https://www.github.com/deviscoding/icons",
-    "version": "1.0.2",
+    "version": "1.0.3",
     "authors": [
         {
             "name": "Aaron M Jones",
@@ -24,6 +24,6 @@
     },
     "license": "MIT",
     "require": {
-        "deviscoding/base": "^1.1.5"
+        "deviscoding/base": "^2.0"
     }
 }

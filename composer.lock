@@ -4,24 +4,24 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "content-hash": "61a6bc2afd08c46b8bb52b4627856020",
+    "content-hash": "3bf6140f56359805d697150b70767951",
     "packages": [
         {
             "name": "deviscoding/base",
-            "version": "1.1.14",
+            "version": "2.0.2",
             "source": {
                 "type": "git",
                 "url": "https://github.com/deviscoding/base.git",
-                "reference": "49fa118ac7a4188f8da232910d449d5d8ba5cfa0"
+                "reference": "422e043118fe98cef847f34a0b57c1f65f8c7fff"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/deviscoding/base/zipball/49fa118ac7a4188f8da232910d449d5d8ba5cfa0",
-                "reference": "49fa118ac7a4188f8da232910d449d5d8ba5cfa0",
+                "url": "https://api.github.com/repos/deviscoding/base/zipball/422e043118fe98cef847f34a0b57c1f65f8c7fff",
+                "reference": "422e043118fe98cef847f34a0b57c1f65f8c7fff",
                 "shasum": ""
             },
             "replace": {
-                "strapless/base": "^1.1"
+                "strapless/base": "^2.0"
             },
             "type": "library",
             "notification-url": "https://packagist.org/downloads/",
@@ -44,7 +44,7 @@
                 "strapless",
                 "variables"
             ],
-            "time": "2018-05-24T12:29:40+00:00"
+            "time": "2018-05-24T12:28:48+00:00"
         }
     ],
     "packages-dev": [],
